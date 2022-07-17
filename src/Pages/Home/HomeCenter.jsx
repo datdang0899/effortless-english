@@ -18,11 +18,11 @@ function HomeCenter() {
             delay: 3000,
           }}
           breakpoints={{
-            540 : {
+            768 : {
               slidesPerView : 4 , 
               spaceBetween : 16 , 
             },
-            768 : {
+            991 : {
               slidesPerView : 5 , 
               spaceBetween : 16 , 
             },
