@@ -1,10 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
+import CardImage from "../../Components/CardImage";
 import "swiper/css";
 import "swiper/css/autoplay";
 
 function HomeCenter() {
+  const configureSwiper = {};
+
   return (
     <div className="home-center container">
       <h2 className="home-center_heading">the best select:</h2>
@@ -18,23 +21,37 @@ function HomeCenter() {
             delay: 3000,
           }}
           breakpoints={{
-            768 : {
-              slidesPerView : 4 , 
-              spaceBetween : 16 , 
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 16,
             },
-            991 : {
-              slidesPerView : 5 , 
-              spaceBetween : 16 , 
+            991: {
+              slidesPerView: 5,
+              spaceBetween: 16,
             },
           }}
         >
-          <SwiperSlide>slide 1</SwiperSlide>
-          <SwiperSlide>slide 2</SwiperSlide>
-          <SwiperSlide>slide 3</SwiperSlide>
-          <SwiperSlide>slide 4</SwiperSlide>
-          <SwiperSlide>slide 5</SwiperSlide>
-          <SwiperSlide>slide 6</SwiperSlide>
-          <SwiperSlide>slide 7</SwiperSlide>
+          <SwiperSlide>
+            <CardImage />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardImage />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardImage />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardImage />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardImage />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardImage />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CardImage />
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
