@@ -3,60 +3,101 @@
 
 #home-section {
   margin-top: 4.8rem;
+
   @include mobile {
-    margin-top: 3.2rem ; 
+    margin-top: 3.2rem;
   }
+
   .home-starts {
     .home-starts_heading {
-      text-transform: uppercase ;
+      text-transform: uppercase;
       font-weight: bold;
       color: $primary-color;
       text-align: center;
 
-      @include mobile{
-        text-align: left ;
-        font-size: 1.4rem ; 
-      }
-    }
-
-  }
-
-  .home-center{
-    margin-top: 4.8rem ; 
-    @include mobile{
-      margin-top: 3.2rem ; 
-    }
-    
-    .home-center_heading{
-      text-transform : uppercase ; 
-      font-weight: bolder;
-      font-size: 2rem ; 
-      color : $primary-color ; 
-    }
-
-    .home-center_slider{
-
-      .card-img-top{
-        height: 18rem ; 
+      @include mobile {
+        text-align: left;
+        font-size: 1.2rem;
       }
     }
   }
 
-  .home-ends{
-    margin-top: 4.8rem ; 
-    @include mobile{
-      margin-top: 3.2rem ; 
+  .home-center {
+    margin-top: 4.8rem;
+
+    @include mobile {
+      margin-top: 3.2rem;
     }
 
-    .home-ends_heading{
-      font-size:2rem ; 
+    .home-center_heading {
+      text-transform: uppercase;
       font-weight: bolder;
-      text-align:center ; 
-      text-transform : uppercase ; 
-      color: $primary-color ; 
+      font-size: 2rem;
+      color: $primary-color;
+    }
 
-      @include mobile{
-        font-size: 1.6rem ; 
+    .home-center_slider {
+      .card-img-top {
+        height: 18rem;
+      }
+    }
+  }
+
+  .home-ends {
+    margin-top: 4.8rem;
+
+    @include mobile {
+      margin-top: 3.2rem;
+    }
+
+    .home-ends_heading {
+      font-size: 2rem;
+      font-weight: bolder;
+      text-align: center;
+      text-transform: uppercase;
+      color: $primary-color;
+
+      @include mobile {
+        font-size: 1.6rem;
+      }
+    }
+
+    .cart {
+      background-color: $bg-card-audio;
+      .card-header,
+      .card-title{
+        @include setLineText(1) ;
+
+      }
+
+      .card-text{
+        @include setLineText(2) ; 
+      }
+
+      .box-navigate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn {
+          background: $primary-color;
+          font-weight: bolder;
+          text-transform: capitalize;
+          color: #fff;
+        }
+      }
+
+      .audio {
+        #audio-control {
+          font-size: 1.4rem;
+          color: #000 ; 
+          text-decoration: none ; 
+          cursor: pointer ; 
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
       }
     }
   }
