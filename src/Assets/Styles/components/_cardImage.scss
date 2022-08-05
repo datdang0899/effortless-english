@@ -1,0 +1,29 @@
+// @import "./Reusables/variables";
+// @import "./Reusables/mixin";
+
+.card {
+  background-color: $bg-home-card;
+  .card-img-top {
+    height: 14rem;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 0.8rem 0.8rem;
+
+    .card-title {
+      @include setLineText(1);
+    }
+    .card-text {
+      height: 3rem;
+      @include setLineText(2);
+    }
+
+    .btn {
+      font-size: 1.4rem ; 
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

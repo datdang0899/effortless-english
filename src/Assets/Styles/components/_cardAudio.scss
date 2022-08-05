@@ -1,0 +1,24 @@
+// @import "./Reusables/mixin";
+// @import "./Reusables/variables";
+
+.cart {
+  background-color: $bg-card-audio;
+  .card-header,
+  .card-title {
+    @include setLineText(1);
+  }
+
+  .card-text {
+    @include setLineText(2);
+  }
+
+  .box-navigate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+      font-size: 1.2rem ; 
+    }
+  }
+}

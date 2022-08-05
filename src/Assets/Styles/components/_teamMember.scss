@@ -1,0 +1,27 @@
+.team-members{
+
+    // margin: 0 2rem ; 
+
+    @include tablet-mini{
+        width:100% ; 
+    }
+    .card-header{
+        display: flex ; 
+
+        h2{
+            text-transform: capitalize ; 
+        }
+
+        .btn{
+            background : $skype-color ; 
+            color: #fff ; 
+            font-size: 1.2rem ; 
+            font-weight: bolder ;
+            margin-left: 1.2rem ; 
+
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}

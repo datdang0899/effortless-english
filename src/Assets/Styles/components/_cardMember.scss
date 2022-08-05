@@ -1,0 +1,65 @@
+.card-teamMember {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+
+  .card-teamMember_link {
+    display: flex;
+    text-decoration: none;
+
+    .member-name {
+      padding-left: 1.2rem;
+      display: flex;
+      flex-direction: column;
+
+     
+      h2 {
+        font-size: 1.6rem;
+        color: #000;
+        font-weight: 450;
+      }
+
+      span {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 1.2rem;
+        align-items: center;
+
+        i {
+          font-size: 1rem;
+        }
+
+        p {
+          margin: 0;
+          margin-bottom: 0.3rem;
+        }
+      }
+
+      &.online{
+        span{
+          color: limegreen ; 
+        }
+      }
+
+      &.busy{
+        span{
+          color: yellow ; 
+        }
+      }
+
+      &.offline{
+        span{
+          color: red ; 
+        }
+      }
+    }
+  }
+
+  .btn {
+    height: fit-content;
+
+    @include mobile {
+      width: unset !important;
+    }
+  }
+}

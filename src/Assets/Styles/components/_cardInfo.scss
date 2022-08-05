@@ -1,0 +1,24 @@
+.card-info{
+    display: flex ; 
+    justify-content : space-between ; 
+    border-bottom: .1rem dashed $sub-text-color ; 
+    margin-bottom: .8rem ; 
+    .card-info_content{
+        .card-info_title{
+            font-size: 1.6rem ; 
+            font-weight: bolder ;
+            text-decoration : none ; 
+            color: $skype-color ; 
+            text-transform: capitalize ; 
+
+            &:hover{
+                transition: .2s ; 
+                color: $primary-color ; 
+            }
+            @include setLineText(1) ; 
+        }
+        .card-info_description{
+            @include setLineText(3) ; 
+        }
+    }
+}

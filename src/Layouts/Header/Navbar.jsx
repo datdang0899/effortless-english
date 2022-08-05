@@ -1,29 +1,54 @@
-import React from "react";
+import React , { useEffect }from "react";
+import { Link, useLocation } from "react-router-dom";
+import { setOpenMenu } from "../../store/layoutUI" ; 
 
-function Navbar({ togglerName }) {
+function Navbar({ dispatch , layoutUI }) {
+  const showMenuMobi = () => layoutUI.displayMenu ? "show" : "" ; 
+  const location = useLocation() ; 
+
+  useEffect(() =>{
+    dispatch(setOpenMenu(false)); 
+  },[location.pathname]);
+
   return (
-    <nav className="navbar navbar-expand-lg ">
-      <div className="collapse navbar-collapse" id={togglerName}>
+    <nav className={"navbar navbar-expand-lg " + showMenuMobi()}>
+      <div className="navbar-collapse" >
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
-              Listening
-            </a>
+            <Link
+              to="/search/eff"
+              className="nav-link active"
+              aria-current="page"
+            >
+              effortless english
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Reading
-            </a>
+            <Link
+              to="/search/7rule"
+              className="nav-link "
+              aria-current="page"
+            >
+              7 rule learning english
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Speaking
-            </a>
+            <Link
+              to="/search/program"
+              className="nav-link "
+              aria-current="page"
+            >
+              programming
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Writing
-            </a>
+            <Link
+              to="/search/books"
+              className="nav-link "
+              aria-current="page"
+            >
+              books
+            </Link>
           </li>
         </ul>
         <form className="d-flex">
@@ -34,10 +59,11 @@ function Navbar({ togglerName }) {
             aria-label="Search"
           />
           <button className="btn" type="submit">
-            Search 
+            Search
           </button>
         </form>
       </div>
+      <div className="navbar-bg-dark" onClick={() => dispatch(setOpenMenu(false))}></div>
     </nav>
   );
 }

@@ -1,0 +1,39 @@
+
+.header-dashboard {
+  padding: 1.2rem 0;
+  box-shadow: 0 0.1rem 0.8rem 0.1rem rgb(0 0 0 / 5%);
+  transition: 0.2s;
+  position: fixed;
+  top: -100% ;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: $background-header;
+
+  @include mobile{
+    top: 0 ; 
+  }
+
+  .container {
+    align-items: center;
+    justify-content: space-between;
+
+    .header-dashboard_logo {
+      font-size: 1.6rem;
+      color: $primary-color;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+
+    .header-dashboard_toggler {
+      border-radius: 0.6rem;
+      border: 0.1rem solid $bg-active-sidebar;
+      cursor: pointer;
+
+      i {
+        font-size: 1.8rem;
+        padding: 0.8rem;
+      }
+    }
+  }
+}

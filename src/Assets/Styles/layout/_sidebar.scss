@@ -1,0 +1,152 @@
+.dashboard-checked-toggle{
+  display: none ;
+
+  &:checked ~ .sidebar-dash{
+    left : 0 ;
+  }
+}
+
+.sidebar-dash {
+  width: 28rem;
+  background: $bg-sidebar;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 10 ; 
+  transition : .2s  ; 
+
+  @include tablet {
+    max-width: 18rem ;
+  }
+
+  @include tablet-mini{
+    max-width: fit-content;
+  }
+
+  @include mobile {
+    height: 100%;
+    width: 100% ; 
+    left: -100% ; 
+    margin-top: 6rem ;
+    max-width: unset;
+
+    &.active{
+      left: 0 ; 
+    }
+  }
+
+  @include customScrollBar(
+    $bg-scrollbar,
+    $color-scrollbar,
+    $color-scrollbar-hover
+  );
+
+  .nav {
+    padding: 0 2.4rem;
+
+    @include tablet {
+      padding: 0;
+    }
+    .nav-item {
+      border-radius: 0.6rem;
+      padding: 0.6rem 1.2rem;
+      margin-bottom: 0.5rem;
+
+      @include mobile {
+        border: .1rem solid $border-sidebar ; 
+      }
+
+      &.active {
+        background: $bg-active-sidebar;
+        border: 0.0625rem solid $border-sidebar;
+
+        @include tablet-mini {
+          background: transparent;
+          border: none;
+        }
+
+        @include mobile {
+          border : .1rem solid $primary-color ; 
+        }
+
+        .nav-link {
+          i {
+            @include tablet-mini {
+              transition: 0.2s;
+              color: $skype-color ; 
+            }
+
+            @include mobile {
+              color : #fff ; 
+            }
+          }
+        }
+      }
+
+      &:hover {
+        transition: 0.2s;
+        background-color: $bg-active-sidebar;
+      }
+
+      &.logo {
+
+        @include mobile {
+          display: none ; 
+        }
+
+        .nav-link {
+          i {
+            color: $primary-color;
+            display: none;
+            @include tablet-mini {
+              display: inline-block;
+            }
+
+           
+          }
+        }
+      }
+
+      .nav-link {
+        display: flex;
+        gap: 0.4rem;
+
+        i {
+          width: 2.4rem;
+          height: 2.4rem;
+          line-height: 2.4rem;
+          font-size: 1.8rem;
+          position: relative;
+          top: 0.05rem;
+          color: #fff;
+        }
+
+        .sidebar-text {
+          font-size: 1.6rem;
+          text-transform: capitalize;
+          color: $text-color-sidebar;
+
+          @include tablet-mini {
+            display: none;
+          }
+
+          @include mobile{
+            display: inline-block ; 
+          }
+        }
+
+        .sidebar-text_logo {
+          color: $primary-color;
+          font-size: 1.6rem;
+          font-weight: bolder;
+
+          @include tablet-mini {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

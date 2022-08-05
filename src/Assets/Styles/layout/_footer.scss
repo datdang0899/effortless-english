@@ -1,0 +1,86 @@
+// @import "./Reusables/mixin";
+// @import "./Reusables/variables";
+
+#footer-section{
+    background : $bg-card-audio ;
+    text-align:center ; 
+    margin-top: 3.2rem ; 
+
+    .footer-social{
+        padding-top : 2.4rem ; 
+        ul{
+            display: flex ; 
+            justify-content: center ;
+            flex-wrap :wrap ; 
+            li{
+                width: 4rem ; 
+                height: 4rem ; 
+                background: $background-color;
+                border-radius : 100% ;
+                list-style: none ;
+                margin: .4rem .8rem ; 
+                a{
+                    line-height: 4rem;
+                    font-size: 2rem ; 
+                    font-weight: bolder;
+                    text-decoration: none ; 
+                    color: #fff ;
+
+                    .fa-facebook{
+                        color : $fb-color ; 
+                    }
+                    .fa-instagram{
+                        color:$instagram-color ; 
+                    }
+                    .fa-google-plus{
+                        color: $gg-color ; 
+                    }
+                    .fa-skype{
+                        color: $skype-color ;
+                    }
+                    .fa-youtube-play{
+                        color :$youtube-color ; 
+                    }
+                } 
+            }
+        }
+    }
+
+    .footer-nav{
+        padding : 1.2rem 0 ; 
+        ul{
+            display:flex ;
+            justify-content: center ;
+            flex-wrap: wrap ; 
+            li{
+                list-style: none ; 
+                margin: 0 .8rem ; 
+                a{
+                    color : $text-color ;
+                    font-weight: 600; 
+                    font-size: 1.6rem ;
+                    text-transform : capitalize ;  
+                    &:hover{
+                        color : $primary-color ; 
+                        transition: .2s ; 
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copyright{
+        h2{
+            margin: 0 .8rem ; 
+        }
+
+        p{
+            margin: 0 ; 
+            padding:.8rem 0 1.2rem  ; 
+            font-size: 1.2rem ; 
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+}

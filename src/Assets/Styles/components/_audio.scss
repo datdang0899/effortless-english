@@ -1,0 +1,15 @@
+// @import "./Reusables/mixin" ; 
+// @import "./Reusables/variables" ; 
+
+.audio {
+  #audio-control {
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

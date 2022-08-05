@@ -1,22 +1,22 @@
 import React from "react";
-import img from "../../Assets/Images/image-demo.jpeg" ; 
-import "../../Assets/Styles/CardImage.scss" ; 
+import img from "../../Assets/Images/image-demo.jpeg";
+import Button from "../../Components/Common/Button" ; 
 
-function CardImage() {
-  return (
-    <div className="card mt-2">
-      <img src={img} alt="image" className="card-img-top" />
-      <div className="card-body">
-        <h5 className="card-title">card title</h5>
-        <p className="card-text">
-          some quick example text to build on the card{" "}
-        </p>
-        <a href="#" className="btn">
-          Learn Now
-        </a>
+function CardImage({ lesson }) {
+  if(lesson)
+    return (
+      <div className="card mt-2">
+        <img src={lesson.imgURL} alt="image" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">{lesson.title}</h5>
+          <p className="card-text">
+            {lesson.content}
+          </p>
+          <Button text="learn now" bg="primary-color" />
+        </div>
       </div>
-    </div>
-  );
+    );
+  else return ; 
 }
 
 export default CardImage;

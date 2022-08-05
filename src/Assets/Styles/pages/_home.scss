@@ -1,0 +1,65 @@
+// @import "./Reusables/variables";
+// @import "./Reusables/mixin";
+
+#home-section {
+  margin-top: 4.8rem;
+
+  @include mobile {
+    margin-top: 3.2rem;
+  }
+
+  .home-starts {
+    .home-starts_heading {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $primary-color;
+      text-align: center;
+
+      @include mobile {
+        text-align: left;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .home-center {
+    margin-top: 4.8rem;
+
+    @include mobile {
+      margin-top: 3.2rem;
+    }
+
+    .home-center_heading {
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 2rem;
+      color: $primary-color;
+    }
+
+    .home-center_slider {
+      .card-img-top {
+        height: 18rem;
+      }
+    }
+  }
+
+  .home-ends {
+    margin-top: 4.8rem;
+
+    @include mobile {
+      margin-top: 3.2rem;
+    }
+
+    .home-ends_heading {
+      font-size: 2rem;
+      font-weight: bolder;
+      text-align: center;
+      text-transform: uppercase;
+      color: $primary-color;
+
+      @include mobile {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

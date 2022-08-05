@@ -1,0 +1,62 @@
+// @import "./Reusables/mixin";
+// @import "./Reusables/variables";
+
+#lessonDetail-section {
+  margin-top: 3.2rem;
+
+  .container {
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  .lessonDetail-audio {
+    border: 0.1rem solid $sub-text-color;
+    .lessonDetail-audio_group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 1.2rem 0.8rem;
+
+      &:hover h2 {
+        transition: 0.2s;
+        color: $primary-color;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        @include setLineText(1);
+      }
+
+      &.active {
+        background: $primary-color;
+        color: #fff;
+        #audio-control {
+          color: #fff;
+        }
+
+        &:hover h2 {
+          color: $sub-text-color;
+        }
+      }
+    }
+  }
+
+  .lesson-content {
+    .lesson-content_heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center ; 
+      h2 {
+        text-transform: capitalize;
+        font-size: 2.4rem;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}

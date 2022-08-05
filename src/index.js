@@ -1,17 +1,20 @@
+import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import $ from "jquery"  ; 
-import Popper from "popper.js" ; 
+// import $ from "jquery";
+// import Popper from "popper.js";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "font-awesome/css/font-awesome.min.css";
-import "./index.scss";
+import "./Assets/Styles/style.scss";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

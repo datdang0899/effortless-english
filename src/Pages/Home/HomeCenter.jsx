@@ -5,7 +5,7 @@ import CardImage from "../../Components/CardImage";
 import "swiper/css";
 import "swiper/css/autoplay";
 
-function HomeCenter() {
+function HomeCenter({ lessons }) {
   const configureSwiper = {};
 
   return (
@@ -31,27 +31,11 @@ function HomeCenter() {
             },
           }}
         >
-          <SwiperSlide>
-            <CardImage />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardImage />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardImage />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardImage />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardImage />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardImage />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CardImage />
-          </SwiperSlide>
+          {lessons.map((lesson) => (
+            <SwiperSlide key={lesson.id}>
+              <CardImage key={lesson.id} lesson={lesson} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

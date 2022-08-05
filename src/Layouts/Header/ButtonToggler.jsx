@@ -1,19 +1,18 @@
-import React from 'react';
+import React from "react";
+import { setOpenMenu } from "../../store/layoutUI";
 
-function ButtonToggler({ togglerName }) {
-    return (
-        <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target={`#${togglerName}`}
-            aria-controls={togglerName}
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i className="fa fa-bars" aria-hidden="true"></i>
-          </button>
-    );
+function ButtonToggler({ dispatch, layoutUI }) {
+  const getClassMenu = () => (layoutUI.displayMenu ? "times" : "bars");
+
+  return (
+    <button
+      className="navbar-toggler"
+      type="button"
+      onClick={() => dispatch(setOpenMenu(!layoutUI.displayMenu))}
+    >
+      <i className={"fa fa-" + getClassMenu(layoutUI.displayMenu)} aria-hidden="true"></i>
+    </button>
+  );
 }
 
 export default ButtonToggler;

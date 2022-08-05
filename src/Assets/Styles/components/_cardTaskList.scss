@@ -1,0 +1,95 @@
+.card-tasklist {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1.2rem;
+  border: 0.1rem solid #000;
+  border-radius: 1.2rem;
+
+  &.active {
+    opacity: 0.6;
+    border-color: $bg-success;
+    .card-tasklist_content {
+      text-decoration: line-through;
+      text-decoration-color: red;
+    }
+
+    .card-tasklist_checkbox {
+      span {
+        background: $bg-success;
+        border: none;
+      }
+    }
+  }
+
+  .card-tasklist_checkbox {
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 1.6rem;
+      width: 1.6rem;
+      border: 0.1rem solid #000;
+      border-radius: 100%;
+      cursor: pointer;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  .card-tasklist_form {
+    display: none;
+
+    &.active {
+      display: flex;
+      flex: 1;
+    }
+
+    input {
+      width: 98% ; 
+      margin: 0 0.4rem;
+      padding: 0 .4rem ; 
+      background: transparent;
+      border: 0.1rem solid $bg-grey-button;
+      outline: none;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+
+    .btn{
+      font-size : 1.4rem ; 
+      margin-right: .4rem ; 
+      height: fit-content ; 
+    }
+
+    &.active ~ .card-tasklist_content {
+      display: none;
+    }
+  }
+
+  .card-tasklist_content {
+    margin: 0;
+    flex: 1;
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  .card-tasklist_controls {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.8rem;
+    .tasklist-edit {
+      color: $bg-success;
+      cursor: pointer;
+    }
+
+    .tasklist-remove {
+      margin-bottom: 0.2rem;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+
+.iLoveEnglist-btn{
+    font-size: 16px ;
+    font-weight: 700;
+    color : #fff ; 
+    text-transform : capitalize ; 
+
+    i{
+        padding-right: .4rem ; 
+    }
+    
+    &:hover{
+        color: #000 ; 
+    }
+
+    &.bg-cardMessage{
+        background: $bg-card-message;
+    }
+
+    &.bg-groupButton{
+        background-color : $bg-grey-button ; 
+    }
+
+    &.skype-color{
+        background-color: $skype-color ;
+    }
+
+    &.primary-color{
+        background: $primary-color ;
+    }
+}

@@ -1,0 +1,136 @@
+.dashboard-section {
+  margin-left: 28rem;
+
+  @include tablet {
+    margin-left: 18rem;
+  }
+
+  @include tablet-mini {
+    margin-left: 8.8rem;
+  }
+
+  @include mobile {
+    margin-left: 0;
+    margin-top: 6rem;
+  }
+
+  .overview-section {
+    .overview-form {
+      padding: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 0.1rem 0.8rem 0.05rem rgba(0, 0, 0, 0.1);
+
+      form {
+        border-bottom: 0.1rem solid $primary-color;
+        label {
+          font-size: 1.6rem;
+        }
+        input {
+          border: none;
+          font-size: 1.6rem;
+          outline: none;
+          background-color: transparent;
+
+          &:focus ~ label {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .overview-form_user {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        .user-name {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .overview-daily {
+    margin: 1.2rem;
+    padding-left: 1.2rem;
+    border-left: 0.1rem solid $bg-sidebar;
+    border-bottom: 0.1rem solid $bg-sidebar;
+    height: 40rem;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1.2rem;
+      height: 100%;
+      li {
+        background: $primary-color;
+        height: 12rem;
+        width: 4rem;
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        p {
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: bolder;
+          color: #fff;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .overview-info {
+    margin: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    .overview-info_table {
+      width: 50%;
+
+      @include tablet-mini {
+        width: 100%;
+      }
+
+      table {
+        @include tablet-mini {
+          min-width: 60rem;
+        }
+      }
+    }
+  }
+
+  .dashboard-messages {
+    padding: 1.2rem;
+
+    .dashboard-message_features {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .tasklist-section{
+    padding : 1.2rem ;
+    
+    .tasklist-row{
+      display: flex ; 
+      align-items: center ;
+      justify-content: space-between ; 
+    }
+    .tasklist-heading{
+      font-size: 2.4rem ;
+      @include mobile {
+        font-size: 2rem ; 
+      }
+    }
+
+    .tasklist-body{
+      display: flex;
+      flex-direction: column-reverse ; 
+      
+    }
+  }
+}

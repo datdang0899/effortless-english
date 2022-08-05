@@ -1,0 +1,87 @@
+.card-message {
+  margin: 1.2rem 0;
+  background: #fff;
+  display: flex;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1.2rem 0.05rem rgba(0, 0, 0, 0.2);
+
+  &.show {
+    .content-boxReply {
+      transition: 0.2s;
+      display: block !important;
+    }
+
+    .content-message {
+      p {
+        display: unset !important;
+      }
+    }
+  }
+
+  .card-message_logo {
+    border-right: 0.1rem solid #000;
+    .user-logo {
+      margin: 0.8rem 1.6rem;
+    }
+  }
+
+  .card-message_content {
+    padding: 0.8rem 1.2rem;
+
+    .content-heading {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 2rem;
+        span {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+
+      i {
+        font-size: 2rem;
+        cursor: pointer;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .content-message {
+      p {
+        font-size: 1.6rem;
+        @include setLineText(2);
+      }
+    }
+
+    .content-boxReply {
+      display: none;
+      margin-top: 0.4rem;
+      textarea {
+        padding: 1.2rem;
+        font-size: 1.6rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #eeeeee;
+      }
+
+      .content-boxReply_control {
+        display: flex ;
+        justify-content: space-between ; 
+        align-items: center ; 
+
+        .btn {
+          border-radius: 0.8rem;
+          margin-top: 0.4rem;
+         
+          i {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

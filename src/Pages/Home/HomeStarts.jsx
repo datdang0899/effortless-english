@@ -1,8 +1,7 @@
 import React from "react";
 import CardImage from "../../Components/CardImage";
-import "../../Assets/Styles/Home.scss";
 
-function HomeStarts(props) {
+function HomeStarts({ lessons }) {
   return (
     <div className="home-starts container">
       <div className="row">
@@ -10,13 +9,13 @@ function HomeStarts(props) {
           <div className="row">
             <h2 className="home-starts_heading">Effortless English :</h2>
             <div className="col-lg-4 col-md-6 col-12">
-              <CardImage />
+              <CardImage lesson={lessons[1]}/>
             </div>
             <div className="col-lg-4 col-md-6 col-12">
-              <CardImage />
+              <CardImage lesson={lessons[2]}/>
             </div>
             <div className="col-lg-4 col-md-6 col-12">
-              <CardImage />
+              <CardImage lesson={lessons[6]}/>
             </div>
           </div>
         </div>
@@ -25,13 +24,13 @@ function HomeStarts(props) {
           <div className="row">
             <h2 className="home-starts_heading">Programming :</h2>
             <div className="col-lg-4 col-md-6 col-12">
-              <CardImage />
+              <CardImage lesson={lessons[3]}/>
             </div>
             <div className="col-lg-4 col-md-6 col-12">
-              <CardImage />
+              <CardImage lesson={lessons[4]} />
             </div>
             <div className="col-lg-4 col-md-6 col-12">
-              <CardImage />
+              <CardImage lesson={lessons[7]}/>
             </div>
           </div>
         </div>
