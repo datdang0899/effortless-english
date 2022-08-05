@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/datdang0899/effortless-english.git/static/css/main.b4b3a40c.css",
-    "main.js": "/datdang0899/effortless-english.git/static/js/main.a270e8bf.js",
-    "static/media/TheRaceAudio.mp3": "/datdang0899/effortless-english.git/static/media/TheRaceAudio.6c32fb6989feadac4f23.mp3",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/datdang0899/effortless-english.git/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/girl.jpg": "/datdang0899/effortless-english.git/static/media/girl.536620a1e5bcab180df0.jpg",
-    "static/media/fontawesome-webfont.eot": "/datdang0899/effortless-english.git/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/datdang0899/effortless-english.git/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/image-demo.jpeg": "/datdang0899/effortless-english.git/static/media/image-demo.897aa14ce764580fc37c.jpeg",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/datdang0899/effortless-english.git/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/datdang0899/effortless-english.git/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/bg-light.jpg": "/datdang0899/effortless-english.git/static/media/bg-light.01aac3072996304176c9.jpg",
-    "index.html": "/datdang0899/effortless-english.git/index.html",
-    "main.b4b3a40c.css.map": "/datdang0899/effortless-english.git/static/css/main.b4b3a40c.css.map",
-    "main.a270e8bf.js.map": "/datdang0899/effortless-english.git/static/js/main.a270e8bf.js.map"
+    "main.css": "/datdang0899/effortless-english/static/css/main.21da6b87.css",
+    "main.js": "/datdang0899/effortless-english/static/js/main.b8ee7741.js",
+    "static/media/TheRaceAudio.mp3": "/datdang0899/effortless-english/static/media/TheRaceAudio.6c32fb6989feadac4f23.mp3",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/datdang0899/effortless-english/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/girl.jpg": "/datdang0899/effortless-english/static/media/girl.536620a1e5bcab180df0.jpg",
+    "static/media/fontawesome-webfont.eot": "/datdang0899/effortless-english/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/datdang0899/effortless-english/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/image-demo.jpeg": "/datdang0899/effortless-english/static/media/image-demo.897aa14ce764580fc37c.jpeg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/datdang0899/effortless-english/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/datdang0899/effortless-english/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/bg-light.jpg": "/datdang0899/effortless-english/static/media/bg-light.01aac3072996304176c9.jpg",
+    "index.html": "/datdang0899/effortless-english/index.html",
+    "main.21da6b87.css.map": "/datdang0899/effortless-english/static/css/main.21da6b87.css.map",
+    "main.b8ee7741.js.map": "/datdang0899/effortless-english/static/js/main.b8ee7741.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4b3a40c.css",
-    "static/js/main.a270e8bf.js"
+    "static/css/main.21da6b87.css",
+    "static/js/main.b8ee7741.js"
   ]
 }
